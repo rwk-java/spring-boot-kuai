@@ -50,4 +50,8 @@ public class TestUser {
         String a = testService.test("a");
         System.out.println(a);
     }
+    @Test
+    public void select1111(){
+        System.out.println("github");
+    }
 }
