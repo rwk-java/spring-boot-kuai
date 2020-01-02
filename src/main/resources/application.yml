@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rwk
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: root
+    username: root
+  profiles:
+    active: product
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 10GB
+mybatis:
+  mapper-locations: com/rong/mapper/*.xml
+  type-aliases-package: com.rong.entity
